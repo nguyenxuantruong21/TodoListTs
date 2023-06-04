@@ -1,3 +1,4 @@
+import React from 'react'
 import styles from './taskList.module.scss'
 
 interface TaskListProps {
@@ -6,22 +7,21 @@ interface TaskListProps {
 
 export default function TaskList(props: TaskListProps) {
   const { doneTaskList } = props
-
   return (
     <div className='mb-2'>
-      <h2 className={styles.title}>{doneTaskList ? 'Hoàn Thành' : 'Chưa hoàn thành'}</h2>
+      <h2 className={styles.title}>{doneTaskList ? 'Hoàn thành' : 'Chưa hoàn thành'}</h2>
       <div className={styles.tasks}>
         <div className={styles.task}>
-          <input type='checkbox' className={`${styles.taskCheckbox} ${styles.taskNameDone}`} />
-          <span className={styles.taskName}>Hoc Bai</span>
+          <input type='checkbox' className={styles.taskCheckBox} />
+          <span className={styles.taskName}>hoc tap ne</span>
           <div className={styles.taskActions}>
             <button className={styles.taskBtn}>🖋️</button>
             <button className={styles.taskBtn}>🗑️</button>
           </div>
         </div>
         <div className={styles.task}>
-          <input type='checkbox' className={`${styles.taskCheckbox} ${styles.taskNameDone}`} />
-          <span className={styles.taskName}>Hoc Bai</span>
+          <input type='checkbox' className={styles.taskCheckBox} />
+          <span className={styles.taskName}>hoc tap ne</span>
           <div className={styles.taskActions}>
             <button className={styles.taskBtn}>🖋️</button>
             <button className={styles.taskBtn}>🗑️</button>
