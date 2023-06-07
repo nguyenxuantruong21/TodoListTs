@@ -49,9 +49,9 @@ export default function TodoList() {
   }
 
   const startEditTodo = (id: string) => {
-    const findeTodo = todos.find((todo) => todo.id === id)
-    if (findeTodo) {
-      setCurrentTodo(findeTodo)
+    const findedTodo = todos.find((todo) => todo.id === id)
+    if (findedTodo) {
+      setCurrentTodo(findedTodo)
     }
   }
 
