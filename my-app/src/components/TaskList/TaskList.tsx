@@ -1,6 +1,7 @@
 import React from 'react'
 import { Todo } from '../../@types/todo.type'
 import styles from './taskList.module.scss'
+import connect from '../../HOC/connect'
 
 interface TaskListProps {
   doneTaskList: boolean
